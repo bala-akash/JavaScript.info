@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Cookie</title>
+    <link rel="stylesheet" href="/cookie.css" />
+  </head>
+  <body>
+    <h1>Let's Create Cookie</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      labore vero, qui fugit beatae consectetur quaerat quae earum a excepturi
+      deleniti magni minus laudantium libero nulla officiis iste odio dolorem!
+    </p>
+    <img src="" alt="" />
+    <div class="cookie">
+      <p>
+        Terms and conditions are a legal agreement that establishes the terms of
+        a transaction or relationship between parties. It's important to
+        understand the provisions of this agreement before agreeing to it, as it
+        is legally binding and can have significant implications for both
+        parties involved
+      </p>
+      <button class="btn_cookie">Accept Cookies</button>
+    </div>
+  </body>
+  <script>
+    var cookie = document.querySelector(".cookie");
+    var button = document.querySelector(".btn_cookie");
+    button.addEventListener("click", () => {
+      cookie.classList.remove("active");
+      localStorage.setItem("The item has been set", "true");
+    });
+    setTimeout(() => {
+      if (!localStorage.getItem("The item has been set"))
+        cookie.classList.add("active");
+    }, 5000);
+  </script>
+</html>
